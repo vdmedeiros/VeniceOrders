@@ -18,8 +18,11 @@
 - Notificações de Pedidos: Envio de mensagens assíncronas para um sistema de notificações via RabbitMQ
 ## Obter Pedidos
 - Consulta de Pedidos com detalhes dos Itens do Pedido (SQL Server + MongoDB)
+- Incluir cache via Redis de 2 minutos para pedidos consultados
 ## Testes Unitários
 - Cobertura de testes unitários para a camada de negócio utilizando xUnit e Moq
+## Segurança
+- Utilizar autenticação via JWT nos endpoints
 
 # Como rodar o projeto localmente
 ## Pré-requisitos
@@ -46,6 +49,10 @@
 	- via Docker
 		- docker pull redis:latest
 		- docker run -d --name redis-server -p 6379:6379 redis:latest
+
+## Autenticação
+- A autenticação é feita via JWT. Para gerar um token, utilize o endpoint `/auth/login` com as credenciais de usuário e senha
+	- Utilizar dados fake de Usuário "admin" e Senha "123".
 
 ## 🏗 Architecture
 
