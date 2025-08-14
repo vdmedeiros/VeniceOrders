@@ -54,7 +54,7 @@
 - A autenticação é feita via JWT. Para gerar um token, utilize o endpoint `/auth/login` com as credenciais de usuário e senha
 	- Utilizar dados fake de Usuário "admin" e Senha "123".
 
-## 🏗 Architecture
+## 🏗 Arquitetura
 
 ```mermaid
 flowchart LR
@@ -65,3 +65,13 @@ flowchart LR
     Service -->|PublishOrder| MQ[(RabbitMQ)]
     RepoOrder --> SQL[(SQL Server)]
     RepoItem --> MongoDb[(MongoDb)]
+
+## ⚠️ Observações
+- Outras melhorias podem ser implementadas, como:
+	- Implementar autenticação e autorização mais robustas
+	- Implementar logs com Serilog ou NLog
+	- Implementar validações de entrada e saída de dados
+	- Implementar tratamento de erros e exceções
+	- Implementar versionamento da API
+	- Separar o envio da mensagem para RabbitMQ para ser enviado através de worker
+```
