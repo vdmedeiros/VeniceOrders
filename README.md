@@ -12,13 +12,13 @@
 - Docker – Containerização
 
 # 🛠 Features
-## Criação de Pedidos: 
+## Criação de Pedidos
 - Persistência dos Dados do Pedido em Banco Relacional (SQL Server)
 - Item de Pedidos: Persistência dos Itens do Pedido em Banco NoSQL (MongoDB)
 - Notificações de Pedidos: Envio de mensagens assíncronas para um sistema de notificações via RabbitMQ
-## Obter Pedidos: 
+## Obter Pedidos
 - Consulta de Pedidos com detalhes dos Itens do Pedido (SQL Server + MongoDB)
-## Testes Unitários:
+## Testes Unitários
 - Cobertura de testes unitários para a camada de negócio utilizando xUnit e Moq
 
 # Como rodar o projeto localmente
