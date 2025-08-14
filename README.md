@@ -7,6 +7,7 @@
 - Entity Framework Core – ORM
 - MongoDb – NoSQL database
 - RabbitMQ – Messaging broker
+- Redis – Cache de dados
 - Repository Pattern – Abstração da camada de acesso a dados
 - xUnit + Moq – Tests unitários
 - Docker – Containerização
