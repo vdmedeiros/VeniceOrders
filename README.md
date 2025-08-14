@@ -33,19 +33,19 @@
 		```
 - MongoDB 
 	- via docker:
-		docker pull mongo
-		docker create mongo
-		docker run --name mongo_venice -d -p 27023:27017 mongo
+		- docker pull mongo
+		- docker create mongo
+		- docker run --name mongo_venice -d -p 27023:27017 mongo
 - RabbitMQ 
 	- via Docker
-		docker pull rabbitmq:3-management
-		docker run --rm  -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
-		Acessar RabbitMq do Container >> http://localhost:15672/
-		User e Psw >> guest
+		- docker pull rabbitmq:3-management
+		- docker run --rm  -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+		- Acessar RabbitMq do Container >> http://localhost:15672/
+		- User e Psw >> guest
 - Redis 
 	- via Docker
-		docker pull redis:latest
-		docker run -d --name redis-server -p 6379:6379 redis:latest
+		- docker pull redis:latest
+		- docker run -d --name redis-server -p 6379:6379 redis:latest
 
 ## 🏗 Architecture
 
@@ -56,5 +56,5 @@ flowchart LR
     Service --> RepoOrder[(Order Repository)]
     Service --> RepoItem[(Order Item Repository)]
     Service -->|PublishOrder| MQ[(RabbitMQ)]
-    RepoOrder --> DB[(Database Sql Server)]
-    RepoItem --> DB[(Database MongoDb)]
+    RepoOrder --> DB[(Database)]
+    RepoItem --> DB
