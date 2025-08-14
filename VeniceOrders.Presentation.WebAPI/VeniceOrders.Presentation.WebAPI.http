@@ -1,0 +1,6 @@
+@VeniceOrders.Presentation.WebAPI_HostAddress = http://localhost:5254
+
+GET {{VeniceOrders.Presentation.WebAPI_HostAddress}}/orders/
+Accept: application/json
+
+###
