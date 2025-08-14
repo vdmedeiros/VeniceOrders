@@ -56,5 +56,5 @@ flowchart LR
     Service --> RepoOrder[(Order Repository)]
     Service --> RepoItem[(Order Item Repository)]
     Service -->|PublishOrder| MQ[(RabbitMQ)]
-    RepoOrder --> DB[(Database)]
-    RepoItem --> DB
+    RepoOrder --> DB[(Database Sql Server)]
+    RepoItem --> DB[(Database MongoDb)]
