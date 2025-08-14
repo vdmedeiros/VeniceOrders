@@ -51,7 +51,7 @@
 		- docker pull redis:latest
 		- docker run -d --name redis-server -p 6379:6379 redis:latest
 
-## Autenticação
+## 🔒Autenticação
 - A autenticação é feita via JWT. Para gerar um token, utilize o endpoint `/auth/login` com as credenciais de usuário e senha
 	- Utilizar dados fake de Usuário "admin" e Senha "123".
 
