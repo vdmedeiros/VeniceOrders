@@ -65,6 +65,7 @@ flowchart LR
     Service -->|PublishOrder| MQ[(RabbitMQ)]
     RepoOrder --> SQL[(SQL Server)]
     RepoItem --> MongoDb[(MongoDb)]
+```
 
 ## ⚠️ Observações
 - Outras melhorias podem ser implementadas, como:
@@ -74,4 +75,3 @@ flowchart LR
 	- Implementar tratamento de erros e exceções
 	- Implementar versionamento da API
 	- Separar o envio da mensagem para RabbitMQ para ser enviado através de worker
-```
